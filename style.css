@@ -1,0 +1,127 @@
+body {
+  background-color: rgb(65, 63, 63);
+  color: white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0%;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 0%;
+}
+
+.rouge {
+  color: rgb(196, 26, 91);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.minia {
+  height: 2rem;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 2px rgb(39, 39, 39);
+}
+
+.clic {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 3rem;
+}
+
+.shopping {
+  height: 2rem;
+}
+
+.connexion {
+  padding: 10px;
+  border: 2px solid rgb(58, 58, 58);
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  border-bottom: 2px solid white;
+}
+
+.externe {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.social,
+.skills {
+  height: 2rem;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid rgb(58, 58, 58);
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pre-grille1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.pre-grille2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10rem;
+}
+
+.jisipa {
+  display: flex;
+  flex-direction: column;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perform {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.like {
+  height: 1rem;
+}
