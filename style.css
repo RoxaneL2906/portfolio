@@ -1,8 +1,8 @@
 body {
   background-color: rgb(65, 63, 63);
   color: white;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 h1 {
@@ -15,6 +15,11 @@ h2 {
   margin: 0%;
 }
 
+h3 {
+  font-size: 20px;
+  margin: 0%;
+}
+
 .rouge {
   color: rgb(196, 26, 91);
 }
@@ -23,30 +28,44 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3rem;
 }
 
 .entete {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .minia {
-  height: 2rem;
+  height: 2.5rem;
   border-radius: 50px;
-  box-shadow: 0px 0px 5px 2px rgb(39, 39, 39);
+  box-shadow: 0px 0px 5px 2px rgb(25, 25, 25);
 }
 
 .clic {
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.clic p:hover {
+  cursor: pointer;
+  color: black;
+  
+}
+
+.clic img:hover {
+  cursor: pointer;
+  background-color: rgb(74, 74, 74);
 }
 
 .shopping {
-  height: 2rem;
+  height: 1.5rem;
+  box-shadow: 0px 0px 5px 2px rgb(25, 25, 25);
+  padding: 1em;
 }
 
 .connexion {
@@ -56,7 +75,8 @@ gap: 3rem;
 }
 
 section {
-  border-bottom: 2px solid white;
+  padding: 40px;
+  border-bottom: 15px double rgb(56, 56, 56);
 }
 
 .externe {
@@ -87,6 +107,25 @@ section {
   justify-content: space-around;
 }
 
+.photoID {
+  position: relative;
+}
+
+.rectangle {
+  position: absolute;
+  height: 70%;
+  width: 75%;
+  bottom: 0;
+  margin-left: 12.5%;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.photo {
+  z-index: 10;
+}
+
 .pre-grille1 {
   display: flex;
   flex-direction: column;
@@ -102,12 +141,30 @@ section {
 .grille {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10rem;
+  gap: 2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .jisipa {
   display: flex;
   flex-direction: column;
+}
+
+.wido {
+  height: 2.5rem;
+}
+
+.contour {
+  border: 2px solid rgb(58, 58, 58);
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+
+.photos {
+  display: flex;
+  width: 100%;
+  height: 300px;
 }
 
 .infos {
@@ -119,9 +176,27 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.3em;
+  gap: 0.3rem;
 }
 
 .like {
   height: 1rem;
+}
+
+@media (max-width: 1300px) {
+  body {
+    padding: 1rem;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .photoID {
+    display: none;
+  }
+
+  .grille {
+    grid-template-columns: 1fr;
+  }
 }
